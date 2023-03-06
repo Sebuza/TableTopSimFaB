@@ -1,0 +1,55 @@
+<Panel rotation="0 0 180" position="0 0 -11" width="734" height="180">
+  <Panel scale="0.5 0.5 0.5" rectAlignment="UpperLeft" offsetXY="0 0">
+
+    <!-- Prebuilts -->
+    <Dropdown rectAlignment="UpperLeft" onValueChanged="onGenerateSetSelected" offsetXY="0 -250" width="240" height="40">
+       <Option selected="true">-- Generate Set --</Option>
+       <Option>Welcome to Rathe</Option>
+       <Option>Arcane Rising</Option>
+       <Option>Crucible of War</Option>
+       <Option>Monarch</Option>
+       <Option>Tales of Aria</Option>
+       <Option>Everfest</Option>
+       <Option>Uprising</Option>
+       <Option>Dynasty</Option>
+       <Option>- Starter Decks -</Option>
+       <Option>Ira Welcome Deck</Option>
+       <Option>Rhinar Hero Deck</Option>
+       <Option>Bravo Hero Deck</Option>
+       <Option>Katsu Hero Deck</Option>
+       <Option>Dorinthea Hero Deck</Option>
+       <Option>Boltyn Hero Deck</Option>
+       <Option>Chane Hero Deck</Option>
+       <Option>Levia Hero Deck</Option>
+       <Option>Prism Hero Deck</Option>
+    </Dropdown>
+
+    <!-- Card/Deck Input -->
+    <InputField onValueChanged="onDeckInputChanged"
+      width="240" height="34" rectAlignment="UpperLeft" offsetXY="0 0"
+      placeholder="FABDB ID, DECK URL, or CARD ID"></InputField>
+
+    <!-- Card/Deck Button -->
+    <Panel position="-247 34 10" width="240" height="40">
+      <Button onClick="onLoadDeckFromFABDBPressed"
+        width="80" height="40" rectAlignment="UpperLeft" offsetXY="0 0">fabdb.net</Button>
+      <Button onClick="onLoadDeckFromGenericURLPressed"
+        width="80" height="40" rectAlignment="UpperLeft" offsetXY="80 0">TPZ</Button>
+      <Button onClick="onLoadSingleCardPressed"
+        width="80" height="40" rectAlignment="UpperLeft" offsetXY="160 0">card id</Button>
+    </Panel>
+
+    <!-- Simulated Play -->
+    <Dropdown rectAlignment="UpperLeft" onValueChanged="onGenerateSimulatedSealed" offsetXY="0 -125" width="240" height="40">
+       <Option selected="true">-- Simulate Sealed --</Option>
+       <Option>Welcome to Rathe</Option>
+       <Option>Arcane Rising</Option>
+       <Option>Crucible of War</Option>
+       <Option>Monarch</Option>
+       <Option>Tales of Aria</Option>
+       <Option>Uprising</Option>
+    </Dropdown>
+    <Button onClick="onGenerateSimulatedSealedAgain"
+      width="240" height="40" rectAlignment="UpperLeft" offsetXY="0 -165">Generate Again</Button>
+  </Panel>
+</Panel>

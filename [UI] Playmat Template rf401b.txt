@@ -1,0 +1,9 @@
+<HorizontalLayout id="panel" width="160" height="40" position="0 0 -15" rotation="0 0 180">
+  <Button width="40" onClick="onSelectPreviousMat">Prev</Button>
+  <InputField width="60" onEndEdit="onIndexChanged" id="mat_index"></InputField>
+  <Button width="40" onClick="onSelectNextMat">Next</Button>
+</HorizontalLayout>
+
+<Panel width="120" height="40" scale="0.15 0.15 0.15" position="-75 90 -15" rotation="0 0 180">
+  <Button icon="endturn-normal" highlightedSprite="endturn-over" pressedSprite="endturn-pressed" width="200" height="40" colors="rgba(0,0,0,0)|rgba(0,0,0,0)|rgba(0,0,0,0)|rgba(0,0,0,0)" onClick="onPitchPressed" />
+</Panel>
